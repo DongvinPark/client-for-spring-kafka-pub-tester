@@ -33,7 +33,7 @@ public class Main {
       }
 
       // send PUT request to Kafka Cluster 25 times.
-      URL url = new URL(Utils.KAFKA_PUBLISHER_ALB_DNS);
+      URL url = new URL(Utils.KAFKA_PUBLISHER_ALB_DNS + Utils.CONTAINER_CLIENT_NAME);
       long finalStart = System.nanoTime();
       for (int i = 0; i < 25; i++) {
         long start = 0L;
